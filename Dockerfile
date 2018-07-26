@@ -70,6 +70,7 @@ EXPOSE ${agent_port}
 
 ENV COPY_REFERENCE_FILE_LOG $JENKINS_HOME/copy_reference_file.log
 
+USER root
 USER ${user}
 
 COPY jenkins-support /usr/local/bin/jenkins-support
